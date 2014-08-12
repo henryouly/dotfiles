@@ -36,6 +36,7 @@ fi
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color) color_prompt=yes;;
+    xterm-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -71,6 +72,7 @@ xterm*|rxvt*)
 esac
 
 # enable color support of ls and also add handy aliases
+alias ls='gls --color=auto'
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -118,6 +120,10 @@ export P4DIFF=vimdiff
 ANDROID_HOME="${HOME}/android-sdks"
 PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 export ANDROID_HOME PATH
+
+# Homebrew
+PATH=${PATH}:${HOME}/homebrew/bin
+export PATH
 
 # Convienent aliases.
 alias ..="cd .."
