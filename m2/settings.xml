@@ -1,0 +1,13 @@
+<settings>
+  <profiles>
+    <profile>
+        <id>android-settings</id>
+        <properties>
+            <android.sdk.path>${env.HOME}/Development/android-sdk-macosx</android.sdk.path>
+        </properties>
+    </profile>
+  </profiles>
+  <activeProfiles>
+        <activeProfile>android-settings</activeProfile>
+  </activeProfiles>
+</settings>
