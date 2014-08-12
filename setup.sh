@@ -1,3 +1,4 @@
 ABSPATH=$(dirname $(greadlink -f "$0"))
-ln -sf ${ABSPATH}/.bashrc ${HOME}/.bashrc
-ln -sf ${ABSPATH}/.bash_profile ${HOME}/.bash_profile
+ln -sf ${ABSPATH}/.bashrc ${HOME}
+ln -sf ${ABSPATH}/.bash_profile ${HOME}
+ln -sf ${ABSPATH}/.inputrc ${HOME}
